@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language id="ptgc" _name="Portugol-C" version="2.0" _section="Source">
+  <metadata>
+    <property name="mimetypes">text/x-ptgc;text/x-ptgcsrc</property>
+    <property name="globs">*.alg</property>
+  </metadata>
+  <styles>
+    <style id="comment" _name="Comment" map-to="def:comment"/>
+    <style id="string" _name="String" map-to="def:string"/>
+    <style id="escaped-character" _name="Escaped Character" map-to="def:special-char"/>
+    <style id="included-file" _name="Included File" map-to="def:string"/>
+    <style id="char" _name="Character" map-to="def:character"/>
+    <style id="keyword" _name="Keyword" map-to="def:keyword"/>
+    <style id="type" _name="Data Type" map-to="def:type"/>
+    <style id="estrutura" _name="Estrutura" map-to="def:preprocessor"/>
+
+  </styles>
+  <definitions>
+    <context id="ptgc">
+      <include>
+
+        <context id="comment" style-ref="comment">
+          <start>\/\/</start>
+          <end>$</end>
+        </context>
+
+        <context id="string" end-at-line-end="true" style-ref="string">
+          <start>"</start>
+          <end>"</end>
+          <include>
+            <context id="escape" style-ref="escaped-character">
+              <match>\\.</match>
+            </context>
+          </include>
+        </context>
+
+        <context id="comment-multiline" style-ref="comment">
+          <start>\/\*</start>
+          <end>\*\/</end>
+          <include>
+            <context ref="def:in-comment"/>
+          </include>
+        </context>
+
+        <context id="char" end-at-line-end="true" style-ref="string">
+          <start>'</start>
+          <end>'</end>
+          <include>
+            <context ref="escape"/>
+          </include>
+        </context>
+
+        <context ref="def:decimal"/>
+        <context ref="def:float"/>
+
+        <context id="estruturas" style-ref="estrutura">
+          <keyword>Algoritmo</keyword>
+          <keyword>algoritmo</keyword>
+          <keyword>inicio</keyword>
+          <keyword>fim</keyword>
+        </context>
+
+        <context id="keywords" style-ref="keyword">
+          <keyword>leia</keyword>
+          <keyword>escreva</keyword>
+          <keyword>novalinha</keyword>
+          <keyword>se</keyword>
+          <keyword>senão</keyword>
+          <keyword>senao</keyword>
+          <keyword>enquanto</keyword>
+          <keyword>escolha</keyword>
+          <keyword>caso</keyword>
+          <keyword>abandone</keyword>
+          <keyword>padrao</keyword>
+          <keyword>padrão</keyword>
+          <keyword>continue</keyword>
+        </context>
+
+        <context id="types" style-ref="type">
+          <keyword>inteiro</keyword>
+          <keyword>real</keyword>
+          <keyword>literal</keyword>
+        </context>
+
+        <context id="if0-comment" style-ref="comment">
+          <start>^#if 0\b</start>
+          <end>^#(endif|else|elif)\b</end>
+          <include>
+            <context id="if-in-if0">
+              <start>^#if(n?def)?\b</start>
+              <end>^#endif\b</end>
+              <include>
+                <context ref="if-in-if0"/>
+              </include>
+            </context>
+          </include>
+        </context>
+
+      </include>
+    </context>
+  </definitions>
+</language>
