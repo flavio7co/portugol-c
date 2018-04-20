@@ -11,7 +11,7 @@ Este projeto foi concebido para ser utilizado em computadores com o __GNU-Linux_
 
 - Abra o terminal do linux (geralmente ctrl+alt+t).
 - Instale o GCC (provavelmente já estará instalado) usando o comando: sudo apt-get install gcc
-- Em seguida digite: wget https://github.com/flavio7co/portugol-c/blob/master/instala-ptgc isto fará download do script de instalação.
+- Em seguida digite: wget https://raw.githubusercontent.com/flavio7co/portugol-c/master/instala-ptgc isto fará download do script de instalação.
 - Em seguida dê permissão para executar o script: chmod +x instala-ptgc (use sudo se necessário)
 - Depois execute o script da seguinte forma: . instala-ptgc (o ponto garante que o script o levará para o diretório do ptgc onde estará o arquivo algoritmo.alg).
 
