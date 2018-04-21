@@ -57,7 +57,7 @@ A leitura é realizada pela palavra leia e o valor lido é inserido na variável
 
 As palavras que identificam os tipos de variáveis também são palavras reservadas. Elas serão apresentadas a seguir.
 
-###Tipos de variáveis
+### Tipos de variáveis
 
 As variáveis nada mais são do que uma posição de memória, reservada pelo sistema operacional e apelidada com o nome que você escolheu seguindo o padrão tipo<espaço>nome (Ex: inteiro numero). 
 
