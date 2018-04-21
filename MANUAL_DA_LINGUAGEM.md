@@ -1,4 +1,4 @@
-#Manual da linguagem Portugol-C
+# Manual da linguagem Portugol-C
 
 ## A Linguagem Estruturada
 
