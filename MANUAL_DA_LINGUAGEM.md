@@ -131,8 +131,6 @@ A opção __padrao__ é acionada quando o valor está fora da faixa determinada 
 
 A palavra __abandone__ deve ser utilizada pois caso ela seja omitida, assim que a opção for acionada ela executará todas abaixo dela.
 
-Também é possível utilizar os conectores lógicos: __e__ e __ou__.
-
 Estrutura:
 
 ```
