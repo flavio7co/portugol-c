@@ -20,7 +20,13 @@ O algoritmo acima não é muito útil, afinal todos sabemos que o dobro de sete 
 - Tudo que aparecer entre as palavras reservadas inicio e fim deverá ser tabulado. A isto chamamos de identação de código e serve para tornar o código mais legível.
 - Deve-se inserir um __;__ (ponto e vírgula) ao final de cada linha entre o inicio e o fim do algoritmo. Algumas excessões serão citadas mais à frente.
 - Recomenda-se que as declarações de variáveis aconteçam sempre nas primeiras linhas do código, garantindo assim que elas estejam devidamente declaradas quando da sua utilização.
-- Só será permitido utilizar em um algoritmo 5 ítens: palavras reservadas, identificadores (nomes de variáveis e do programa), expressões literais (frases) entre aspas, operadores (apenas os que forem definidos, por hora <-, +, -, *, \ e %) e pontuação. Ex: ; , ) " (  
+- Só será permitido utilizar em um algoritmo 6 ítens: 
+	- palavras reservadas, 
+	- identificadores (nomes de variáveis e do programa), 
+	- constantes (números), 
+	- expressões literais (frases) entre aspas, 
+	- operadores (apenas os que forem definidos, por hora <-, +, -, *, \ e %) e 
+	- pontuação. Ex: ; , ) " (  
 
 ### Palavras reservadas
 
