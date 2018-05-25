@@ -103,7 +103,7 @@ Esta estrutura possibilita a escolha entre blocos de comandos diferentes caso a 
 
 A condição é uma expressão lógica e ela utiliza os operadores: <  (menor), > (maior), <= (menor ou igual),>= (maior ou igual), == (igual) e != (diferente).
 
-Também é possível utilizar os conectores lógicos: __e__ e __ou__.
+Também é possível utilizar os conectores lógicos: __&&__ (conector lógico e) e __||__ (conector lógico ou).
 
 Estrutura:
 
@@ -182,7 +182,7 @@ Esta estrutura possibilita a repetição de comandos inseridos entre seu inicio 
 
 A condição é uma expressão lógica e ela utiliza os operadores: <  (menor), > (maior), <= (menor ou igual),>= (maior ou igual), == (igual) e != (diferente).
 
-Também é possível utilizar os conectores lógicos: __e__ e __ou__.
+Também é possível utilizar os conectores lógicos: __&&__ (conector lógico e) e __||__ (conector lógico ou).
 
 Estrutura:
 
