@@ -25,7 +25,7 @@ O algoritmo acima não é muito útil, afinal todos sabemos que o dobro de sete 
 	- identificadores (nomes de variáveis e do programa), 
 	- constantes (números), 
 	- expressões literais (frases) entre aspas, 
-	- operadores (apenas os que forem definidos, por hora <-, +, -, *, \ e %) e 
+	- operadores (apenas os que forem definidos, por hora <-, +, -, *, / e %) e 
 	- pontuação. Ex: ; , ) " (  
 
 ### Palavras reservadas
